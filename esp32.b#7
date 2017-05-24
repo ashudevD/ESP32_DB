@@ -9,7 +9,7 @@
 <grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -451,7 +451,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="default">
+<designrules name="default *">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -469,21 +469,21 @@ design rules under a new name.</description>
 <param name="layerSetup" value="(1*16)"/>
 <param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
 <param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
-<param name="mdWireWire" value="8mil"/>
-<param name="mdWirePad" value="8mil"/>
-<param name="mdWireVia" value="8mil"/>
-<param name="mdPadPad" value="8mil"/>
-<param name="mdPadVia" value="8mil"/>
-<param name="mdViaVia" value="8mil"/>
-<param name="mdSmdPad" value="8mil"/>
-<param name="mdSmdVia" value="8mil"/>
-<param name="mdSmdSmd" value="8mil"/>
+<param name="mdWireWire" value="9mil"/>
+<param name="mdWirePad" value="9mil"/>
+<param name="mdWireVia" value="9mil"/>
+<param name="mdPadPad" value="9mil"/>
+<param name="mdPadVia" value="9mil"/>
+<param name="mdViaVia" value="9mil"/>
+<param name="mdSmdPad" value="9mil"/>
+<param name="mdSmdVia" value="9mil"/>
+<param name="mdSmdSmd" value="9mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
 <param name="mdCopperDimension" value="40mil"/>
 <param name="mdDrill" value="8mil"/>
 <param name="mdSmdStop" value="0mil"/>
-<param name="msWidth" value="10mil"/>
+<param name="msWidth" value="20mil"/>
 <param name="msDrill" value="24mil"/>
 <param name="msMicroVia" value="9.99mm"/>
 <param name="msBlindViaRatio" value="0.5"/>
@@ -536,12 +536,12 @@ design rules under a new name.</description>
 </designrules>
 <autorouter>
 <pass name="Default">
-<param name="RoutingGrid" value="50mil"/>
+<param name="RoutingGrid" value="6.25mil"/>
 <param name="AutoGrid" value="1"/>
-<param name="Efforts" value="0"/>
+<param name="Efforts" value="2"/>
 <param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
-<param name="PrefDir.1" value="a"/>
+<param name="PrefDir.1" value="*"/>
 <param name="PrefDir.2" value="0"/>
 <param name="PrefDir.3" value="0"/>
 <param name="PrefDir.4" value="0"/>
@@ -556,7 +556,7 @@ design rules under a new name.</description>
 <param name="PrefDir.13" value="0"/>
 <param name="PrefDir.14" value="0"/>
 <param name="PrefDir.15" value="0"/>
-<param name="PrefDir.16" value="a"/>
+<param name="PrefDir.16" value="0"/>
 <param name="cfVia" value="8"/>
 <param name="cfNonPref" value="5"/>
 <param name="cfChangeDir" value="2"/>
@@ -643,18 +643,18 @@ design rules under a new name.</description>
 <contactref element="J1" pad="14"/>
 <contactref element="U1" pad="0"/>
 <contactref element="U1" pad="1"/>
-<wire x1="35.478" y1="70.79" x2="44.698" y2="63.1" width="0" layer="19" extent="1-1"/>
-<wire x1="29.21" y1="77.47" x2="35.478" y2="70.79" width="0" layer="19" extent="1-1"/>
+<wire x1="35.478" y1="70.79" x2="29.21" y2="77.47" width="0" layer="19" extent="1-1"/>
+<wire x1="44.698" y1="63.1" x2="35.478" y2="70.79" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$4">
 <contactref element="J1" pad="13"/>
 <contactref element="U1" pad="2"/>
-<wire x1="29.21" y1="74.93" x2="35.478" y2="69.52" width="0" layer="19" extent="1-1"/>
+<wire x1="35.478" y1="69.52" x2="29.21" y2="74.93" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$5">
 <contactref element="J1" pad="12"/>
 <contactref element="U1" pad="3"/>
-<wire x1="29.21" y1="72.39" x2="35.478" y2="68.25" width="0" layer="19" extent="1-1"/>
+<wire x1="35.478" y1="68.25" x2="29.21" y2="72.39" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
 <contactref element="U1" pad="4"/>
@@ -734,12 +734,12 @@ design rules under a new name.</description>
 <signal name="N$26">
 <contactref element="J2" pad="12"/>
 <contactref element="U1" pad="27"/>
-<wire x1="54.178" y1="56.82" x2="59.69" y2="49.53" width="0" layer="19" extent="1-1"/>
+<wire x1="59.69" y1="49.53" x2="54.178" y2="56.82" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$27">
 <contactref element="J2" pad="13"/>
 <contactref element="U1" pad="26"/>
-<wire x1="54.178" y1="55.55" x2="59.69" y2="46.99" width="0" layer="19" extent="1-1"/>
+<wire x1="59.69" y1="46.99" x2="54.178" y2="55.55" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$20">
 <contactref element="J2" pad="6"/>
@@ -759,27 +759,27 @@ design rules under a new name.</description>
 <signal name="N$16">
 <contactref element="J2" pad="4"/>
 <contactref element="U1" pad="35"/>
-<wire x1="59.69" y1="69.85" x2="54.178" y2="66.98" width="0" layer="19" extent="1-1"/>
+<wire x1="54.178" y1="66.98" x2="59.69" y2="69.85" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$17">
 <contactref element="U1" pad="36"/>
 <contactref element="J2" pad="3"/>
-<wire x1="59.69" y1="72.39" x2="54.178" y2="68.25" width="0" layer="19" extent="1-1"/>
+<wire x1="54.178" y1="68.25" x2="59.69" y2="72.39" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$18">
 <contactref element="J2" pad="2"/>
 <contactref element="U1" pad="37"/>
-<wire x1="59.69" y1="74.93" x2="54.178" y2="69.52" width="0" layer="19" extent="1-1"/>
+<wire x1="54.178" y1="69.52" x2="59.69" y2="74.93" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$24">
 <contactref element="U1" pad="38"/>
 <contactref element="J2" pad="1"/>
-<wire x1="59.69" y1="77.47" x2="54.178" y2="70.79" width="0" layer="19" extent="1-1"/>
+<wire x1="54.178" y1="70.79" x2="59.69" y2="77.47" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$28">
 <contactref element="J2" pad="14"/>
 <contactref element="U1" pad="25"/>
-<wire x1="54.178" y1="54.28" x2="59.69" y2="44.45" width="0" layer="19" extent="1-1"/>
+<wire x1="59.69" y1="44.45" x2="54.178" y2="54.28" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$29">
 <contactref element="J3" pad="10"/>
@@ -829,7 +829,7 @@ design rules under a new name.</description>
 <signal name="N$38">
 <contactref element="J3" pad="1"/>
 <contactref element="U1" pad="24"/>
-<wire x1="55.88" y1="44.45" x2="50.538" y2="52.48" width="0" layer="19" extent="1-1"/>
+<wire x1="50.538" y1="52.48" x2="55.88" y2="44.45" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

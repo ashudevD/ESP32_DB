@@ -1784,7 +1784,7 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <busses>
 </busses>
 <nets>
-<net name="N$1" class="0">
+<net name="GND" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="14"/>
 <wire x1="-20.32" y1="55.88" x2="15.24" y2="55.88" width="0.1524" layer="91"/>
@@ -1795,6 +1795,18 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <pinref part="U1" gate="G$1" pin="GND"/>
 <wire x1="30.48" y1="71.12" x2="30.48" y2="73.66" width="0.1524" layer="91"/>
 <junction x="30.48" y="73.66"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="GND@1"/>
+<pinref part="J2" gate="G$1" pin="1"/>
+<wire x1="101.6" y1="71.12" x2="134.62" y2="55.88" width="0.1524" layer="91"/>
+<junction x="101.6" y="71.12"/>
+</segment>
+<segment>
+<pinref part="J3" gate="G$1" pin="10"/>
+<pinref part="U1" gate="G$1" pin="GND@3"/>
+<wire x1="53.34" y1="-27.94" x2="43.18" y2="-10.16" width="0.1524" layer="91"/>
+<junction x="43.18" y="-10.16"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -1936,15 +1948,6 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <junction x="101.6" y="45.72"/>
 </segment>
 </net>
-<net name="N$21" class="0">
-<segment>
-<pinref part="J2" gate="G$1" pin="7"/>
-<wire x1="134.62" y1="40.64" x2="101.6" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="40.64" x2="101.6" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="IO20"/>
-<junction x="101.6" y="40.64"/>
-</segment>
-</net>
 <net name="N$22" class="0">
 <segment>
 <pinref part="J2" gate="G$1" pin="8"/>
@@ -2028,28 +2031,12 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <junction x="101.6" y="66.04"/>
 </segment>
 </net>
-<net name="N$24" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="GND@1"/>
-<pinref part="J2" gate="G$1" pin="1"/>
-<wire x1="101.6" y1="71.12" x2="134.62" y2="55.88" width="0.1524" layer="91"/>
-<junction x="101.6" y="71.12"/>
-</segment>
-</net>
 <net name="N$28" class="0">
 <segment>
 <pinref part="J2" gate="G$1" pin="14"/>
 <pinref part="U1" gate="G$1" pin="IO0"/>
 <wire x1="134.62" y1="22.86" x2="101.6" y2="5.08" width="0.1524" layer="91"/>
 <junction x="101.6" y="5.08"/>
-</segment>
-</net>
-<net name="N$29" class="0">
-<segment>
-<pinref part="J3" gate="G$1" pin="10"/>
-<pinref part="U1" gate="G$1" pin="GND@3"/>
-<wire x1="53.34" y1="-27.94" x2="43.18" y2="-10.16" width="0.1524" layer="91"/>
-<junction x="43.18" y="-10.16"/>
 </segment>
 </net>
 <net name="N$30" class="0">

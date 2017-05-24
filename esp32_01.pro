@@ -2,24 +2,24 @@ EAGLE AutoRouter Statistics:
 
 Job           : /home/ashutosh/eagle/ESP32_DB/esp32.brd
 
-Start at      : 18:58:51 (23/05/17)
-End at        : 18:58:53 (23/05/17)
-Elapsed time  : 00:00:00
+Start at      : 00:43:43 (24/05/17)
+End at        : 00:43:46 (24/05/17)
+Elapsed time  : 00:00:01
 
-Signals       :    39   RoutingGrid: 25 mil  Layers: 1
-Connections   :    18   predefined:  0 ( 0 Vias )
+Signals       :    37   RoutingGrid: 25 mil  Layers: 1
+Connections   :    23   predefined:  0 ( 0 Vias )
 
-Router memory :   21828
+Router memory :   21420
 
-Passname          :     Route Optimize1 Optimize2 Optimize3 Optimize4
+Passname          :    Busses     Route Optimize1 Optimize2 Optimize3 Optimize4
 
-Time per pass     :  00:00:00  00:00:00  00:00:00  00:00:00  00:00:00
-Number of Ripups  :         8         0         0         0         0
-max. Level        :         2         0         0         0         0
-max. Total        :         8         0         0         0         0
+Time per pass     :  00:00:00  00:00:01  00:00:00  00:00:00  00:00:00  00:00:00
+Number of Ripups  :         0        18         0         0         0         0
+max. Level        :         0         2         0         0         0         0
+max. Total        :         0        12         0         0         0         0
 
-Routed            :        17        18        18        18        18
-Vias              :         0         0         0         0         0
-Resolution        :    94.4 %   100.0 %   100.0 %   100.0 %   100.0 %
+Routed            :         2        23        23        23        23        23
+Vias              :         0         0         0         0         0         0
+Resolution        :     8.7 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
 
 Final             : 
